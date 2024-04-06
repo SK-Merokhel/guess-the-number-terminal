@@ -1,0 +1,70 @@
+=== Setup Environment ===
+
+We're creating a folder to organize our project.
+Opening it in the terminal helps us run commands related to our project.
+Opening VS Code within this folder provides a convenient environment for coding.
+
+=== Push to GitHub ===
+
+GitHub is like a digital workspace where we store our project.
+Creating a new repository on GitHub is like reserving a space for our project online.
+Cloning the repository to our local system means making a local copy of our online workspace.
+SK_Merokhel:~/Desktop/guess-the-number-terminal$ git clone https://github.com/SK-Merokhel/guess-the-number-terminal.git
+Opening it in VS Code lets us work on our project comfortably.
+
+=== Initial Configurations ===
+
+TypeScript helps us write more reliable code by catching errors early.
+Initialize TypeScript by running tsc --init to create tsconfig.json.
+tsconfig.json is like a settings file for TypeScript.
+We're setting it to use the latest version of JavaScript (ES2022) and to work smoothly with Node.js (NodeNext).
+
+Modify tsconfig.json:
+Change "target" to "ES2022".
+Change "module" to "NodeNext".
+Uncomment and change "moduleResolution" to "NodeNext".
+
+Initialize npm by running npm --init to create package.json.
+package.json is like a manifest file for our project, listing its details and dependencies.
+
+Modify package.json:
+Add "type": "module" to support ES module syntax.
+
+=== Install Dependencies ===
+
+Inquirer is a package that helps us interact with users through the terminal.
+Installing it means bringing in this tool for our project to use.
+Install Inquirer package using npm install inquirer.
+Installing type definitions for Inquirer helps TypeScript understand how to work with it, preventing errors.
+Install type definitions for Inquirer using npm install --save-dev @types/inquirer.
+
+=== Start Coding ===
+
+Create your main TypeScript file named main.ts.
+Import Inquirer in main.ts using import inquirer from "inquirer";.
+
+We're now ready to write the actual code for our number guessing game!
+By importing Inquirer, we can use its features to take user input and make our game interactive.
+Following these steps will help us set up our project environment, configure it for smooth development, install necessary tools, and finally, get ready to dive into coding our game.
+
+=== Sharing our project with the world ===
+
+Now, let's take our guess-the-number-terminal project to the next level and make it accessible to everyone around the world. Imagine you've built a guess-the-number-terminal application, and you want to share it with your friends, family, and even strangers who might find it useful.
+
+Step 1: Adding the Shebang Line
+
+To make our calculator easy to use from the command line, we'll add a special line called a shebang at the beginning of our app.ts file. Think of this like putting up a sign that says "This is a program!".
+
+For example, suppose you've created a recipe guess-the-number-terminal, and you want people to be able to run it from their terminal. By adding the shebang line #!/usr/bin/env node, you're essentially telling the computer that this file is an executable program.
+
+Step 2: Configuring package.json
+
+Now, let's make it even easier for people to use our guess-the-number-terminal. We'll edit our package.json file to let npm know that our guess-the-number-terminal can be run as a command.
+
+Imagine you've developed a fitness tracker, and you want users to be able to track their workouts from the command line. By adding "bin": "app.js" to your package.json, you're telling npm that when someone types fit-tracker into their terminal, it should run the code in index.js.
+
+Step 3: Publishing to npm
+
+Now that we've made our guess-the-number-terminal easy to run from the command line, let's share it with the world! First, we'll need to log in to npm using the npm login command. Once we're logged in, we can use npm publish to share our guess-the-number-terminal with everyone.
+
+Imagine you've created a weather app, and you want people all over the world to be able to check the forecast from their terminal. By publishing your app to npm, anyone can install it with a single command (npm install -g weather-app) and start using it right away.
